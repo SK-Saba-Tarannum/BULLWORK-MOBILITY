@@ -1,0 +1,36 @@
+var appsScriptURL = 'https://script.google.com/macros/s/AKfycbxSJpku_0D3sKEnUNa7UXCH-I4ARvE-iLoK8zdeRPENkHOKaGwiT-jlEygyGR-OZ2qX/exec'; // Set this variable to your Apps Script URL
+
+
+function submitForm() {
+    var form = document.createElement('form');
+    
+    var nameIsValid = document.getElementById('name').checkValidity();
+    
+    form.setAttribute('method', 'post');
+    form.setAttribute('action', appsScriptURL);
+    
+    if (nameIsValid == true ) {
+    var nameInput = document.createElement('input');
+    nameInput.setAttribute('type', 'hidden');
+    nameInput.setAttribute('name', 'name');
+    nameInput.setAttribute('value', document.getElementById('name').value);
+    form.appendChild(nameInput);
+    
+    // var phoneInput = document.createElement('input');
+    // phoneInput.setAttribute('type', 'hidden');
+    // phoneInput.setAttribute('name', 'phone');
+    // phoneInput.setAttribute('value', document.getElementById('phone').value);
+    // form.appendChild(phoneInput);
+    
+    form.style.display = 'none'; // Hide the form
+    
+    document.body.appendChild(form);
+    
+    form.submit();
+    
+    alert('Form submitted successfully');
+    document.getElementById('myForm').reset(); // Display an alert for successful submission
+    } else {
+        alert('Please enter valid email');
+      }
+    }

@@ -1,0 +1,642 @@
+.swiper-containersss {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height:90vh; /* Adjust as needed */
+  }
+  .swiper-containersss .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  .swiper-containersss .swiper-slide {
+      display: flex;
+      flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    flex-shrink: 0;
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+    height: 400px;
+  }
+
+  .containerss {
+
+    box-sizing: border-box; /* Ensures padding and border are included in the dimensions */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 5px  rgba(81, 0, 81, 0.1); 
+    height: 400px;
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    
+  }
+  .mini-card-container {
+    width: 100%; /* Full width of the parent */
+    display: flex;
+    justify-content: center; /* Center the mini-card */
+  }
+  .mini-card {
+    display: none;
+    flex-direction: row;
+    height: auto; /* Ensure it is less than 100% to center properly */
+    background-color: #eee6ef;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1); 
+
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    width: 90%;
+    margin-top: 20px;
+  margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 10px; /* Center horizontally */
+  }
+  .swiper-containersss .swiper-slide-active  {
+     height: 700px;
+    transform: scale(1);
+    
+  }
+  .swiper-containersss .swiper-slide-active .mini-card {
+    display: flex;
+
+    }
+  .swiper-containersss .swiper-slide-active .containerss {
+    width: 650px;
+    height: 680px;
+          z-index: 1;
+  }
+  
+  .swiper-containersss .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+  
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .swiper-containersss .left_arrow,
+  .swiper-containersss .right_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+  }
+  .swiper-containersss .left_arrow {
+    left: 28%;
+    z-index: 10;
+  }
+
+  .swiper-containersss .right_arrow {
+    right: 28%;
+    z-index: 10;
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px; /* Adjust width */
+    height: 12px; /* Adjust height */
+    background-color: #d9d9d9; /* Change color */
+    opacity: 0.7; /* Adjust opacity */
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #510059; /* Change active bullet color */
+    width: 20px; /* Adjust width */
+    height: 12px; /* Adjust height */
+    border-radius: 24px;
+  }
+
+
+
+  .carousel_button{
+    height: 32px;
+    width: 120px;
+    background-color: #FFA726;
+    font-size: 12px;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .text{
+    margin: 0;
+    font-size: 14px;
+    color: black;
+    margin-right: 5px;
+    font-weight: normal;
+  }
+  .orangetext{
+    margin: 0;
+    font-size: 14px;
+    color: black;
+    font-weight: 900;
+  }
+  .text_box{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .image-link {
+    display: inline-block;
+    position: relative;
+  }
+
+
+  @media screen and (max-width: 1800px) {
+
+    .swiper-containersss .left_arrow {
+      left: 26.5%;
+      z-index: 10;
+    }
+  
+    .swiper-containersss .right_arrow {
+      right: 26.5%;
+      z-index: 10;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 1600px) {
+
+    .swiper-containersss .swiper-slide {
+      display: flex;
+      flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    flex-shrink: 0;
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+    height: 300px;
+  }
+
+  .containerss {
+
+    box-sizing: border-box; /* Ensures padding and border are included in the dimensions */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 5px  rgba(81, 0, 81, 0.1); 
+    height: 300px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    
+  }
+
+  .swiper-containersss .swiper-slide-active  {
+    height: 600px;
+   transform: scale(1);
+   
+ }
+
+  .swiper-containersss .swiper-slide-active .containerss {
+    width: 550px;
+    height: 580px;
+          z-index: 1;
+  }
+
+
+
+  .swiper-containersss .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+  
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  
+
+  .swiper-containersss .left_arrow {
+    left: 26%;
+    z-index: 10;
+  }
+
+  .swiper-containersss .right_arrow {
+    right: 26%;
+    z-index: 10;
+  }
+
+  .image-link {
+    display: inline-block;
+    position: relative;
+    height: 70%;
+  }
+
+
+  }
+
+  @media screen and (max-width: 1440px) {
+
+    .swiper-containersss {
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      overflow: hidden;
+      width: 100%;
+      height: 90vh; /* Adjust as needed */
+    }
+
+    .swiper-containersss .swiper-slide {
+      display: flex;
+      flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    flex-shrink: 0;
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+    height: 250px;
+  }
+
+  .containerss {
+
+    box-sizing: border-box; /* Ensures padding and border are included in the dimensions */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 5px  rgba(81, 0, 81, 0.1); 
+    height: 250px;
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    
+  }
+
+  .swiper-containersss .swiper-slide-active  {
+    height: 500px;
+   transform: scale(1);
+   
+ }
+
+  .swiper-containersss .swiper-slide-active .containerss {
+    width: 450px;
+    height: 480px;
+          z-index: 1;
+  }
+
+  .carousel_button{
+    height: 24px;
+    width: 80px;
+    background-color: #FFA726;
+    font-size: 10px;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+  }
+
+
+  .swiper-containersss .swiper-slide img {
+    width: 100%;
+    height: 120%;
+    border-radius: 20px;
+
+  
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .text{
+font-weight: normal;
+    font-size: 12px;
+  
+  }
+  .orangetext{
+  
+    font-size: 12px;
+    color: black;
+    font-weight: 900;
+  }
+  
+
+  .swiper-containersss .left_arrow {
+    left: 26%;
+    z-index: 10;
+  }
+
+  .swiper-containersss .right_arrow {
+    right: 26%;
+    z-index: 10;
+  }
+
+  .image-link {
+    display: inline-block;
+    position: relative;
+    height: 65%;
+  }
+
+  .swiper-containersss .left_arrow,
+  .swiper-containersss .right_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+  }
+  .swiper-containersss .left_arrow {
+    left: 26%;
+    z-index: 10;
+  }
+
+  .swiper-containersss .right_arrow {
+    right: 26%;
+    z-index: 10;
+  }
+
+  }
+
+  @media screen and (max-width: 1024px) {
+    .swiper-containersss {
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      overflow: hidden;
+      width: 100%;
+      height: 80vh; /* Adjust as needed */
+    }
+
+    .swiper-containersss .swiper-slide {
+      display: flex;
+      flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    flex-shrink: 0;
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+    height: 200px;
+  }
+
+  .mini-card {
+    display: none;
+    flex-direction: row;
+    height: auto; /* Ensure it is less than 100% to center properly */
+    background-color: #eee6ef;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    width: 90%;
+    margin-top: 10px;
+  margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 10px; /* Center horizontally */
+  }
+
+  .containerss {
+
+    box-sizing: border-box; /* Ensures padding and border are included in the dimensions */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 5px  rgba(81, 0, 81, 0.1); 
+    height: 200px;
+    width: 200px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    
+  }
+
+  .swiper-containersss .swiper-slide-active  {
+    height: 400px;
+   transform: scale(1);
+   
+ }
+
+  .swiper-containersss .swiper-slide-active .containerss {
+    width: 350px;
+    height: 380px;
+          z-index: 1;
+  }
+  .text_box{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    text-align: left;
+  }
+  .carousel_button{
+    height: 24px;
+    width: 80px;
+    background-color: #FFA726;
+    font-size: 10px;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+  }
+
+
+  .swiper-containersss .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+  
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .text{
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .orangetext{
+    margin: 0;
+    font-size: 12px;
+    color: black;
+    font-weight: 900;
+  }
+  
+
+
+  .image-link {
+    display: inline-block;
+    position: relative;
+    height: 60%;
+  }
+
+  .swiper-containersss .left_arrow,
+  .swiper-containersss .right_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+  }
+  .swiper-containersss .left_arrow {
+    left: 25%;
+    z-index: 10;
+  }
+
+  .swiper-containersss .right_arrow {
+    right: 25%;
+    z-index: 10;
+  }
+
+  }
+
+  @media screen and (max-width: 834px) {
+
+    .swiper-containersss {
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      overflow: hidden;
+      width: 100%;
+      height: 80vh; /* Adjust as needed */
+    }
+
+    .swiper-containersss .swiper-slide {
+      display: flex;
+      flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    flex-shrink: 0;
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+    height: 200px;
+  }
+
+  .mini-card {
+    display: none;
+    flex-direction: row;
+    height: auto; /* Ensure it is less than 100% to center properly */
+    background-color: #eee6ef;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    width: 90%;
+    margin-top: 10px;
+  margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 10px; /* Center horizontally */
+  }
+
+  .containerss {
+
+    box-sizing: border-box; /* Ensures padding and border are included in the dimensions */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 5px  rgba(81, 0, 81, 0.1); 
+    height: 200px;
+    width: 200px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    
+  }
+
+  .swiper-containersss .swiper-slide-active  {
+    height: 450px;
+   transform: scale(1);
+   
+ }
+
+  .swiper-containersss .swiper-slide-active .containerss {
+    width: 350px;
+    height: 420px;
+          z-index: 1;
+  }
+  .text_box{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    text-align: left;
+  }
+  .carousel_button{
+    height: 24px;
+    width: 80px;
+    background-color: #FFA726;
+    font-size: 10px;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+  }
+
+
+  .swiper-containersss .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+  
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .text{
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .orangetext{
+    margin: 0;
+    font-size: 12px;
+    color: black;
+    font-weight: 900;
+    
+  }
+  
+
+
+  .image-link {
+    display: inline-block;
+    position: relative;
+    height: 65%;
+  }
+
+  .swiper-containersss .left_arrow,
+  .swiper-containersss .right_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+  }
+  .swiper-containersss .left_arrow {
+    left: 23.5%;
+    z-index: 10;
+  }
+
+  .swiper-containersss .right_arrow {
+    right: 23.5%;
+    z-index: 10;
+  }
+  }
+
+
+
+
+  @media screen and (max-width: 768px) {
+
+  .swiper-containersss{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .swiper-containersss{
+    display: none;
+  }
+}

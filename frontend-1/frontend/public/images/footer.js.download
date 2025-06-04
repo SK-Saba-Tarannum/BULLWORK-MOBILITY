@@ -1,0 +1,28 @@
+function dropdown() {
+    // Get the computed style of the first element
+    var answerElement = document.getElementById(arguments[0]);
+    var computedStyle = window.getComputedStyle(answerElement);
+  
+    // Determine if the element is currently visible
+    var isVisible = computedStyle.display !== 'none';
+  
+    // Toggle visibility of all elements
+    for (var i = 0; i < arguments.length; i++) {
+      var element = document.getElementById(arguments[i]);
+      if (isVisible) {
+        element.style.display = "none";
+      } else {
+        element.style.display = "block";
+      }
+    }
+  }
+  
+
+
+
+document.getElementById('scrollButton').addEventListener('click', function() {
+  window.scrollTo({
+      top: window.innerHeight * 0.98, // Scroll to 110vh
+      behavior: 'smooth' // Smooth scrolling
+  });
+});

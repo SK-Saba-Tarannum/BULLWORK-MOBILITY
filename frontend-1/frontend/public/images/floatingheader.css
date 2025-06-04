@@ -1,0 +1,617 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #141414;
+}
+
+.fixednavbar {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #141414;
+    padding-bottom: 10px;
+}
+
+.logoconatiner {
+    display: flex;
+    padding-left: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.phonelogoconatiner {
+    display: none;
+    padding-left: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerlogo {
+    height: 36px;
+    width: 30px;
+}
+
+.header_logo {
+    margin-left: 16px;
+    height: 15px;
+    width: 300px;
+}
+
+.dropdowntext {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.logotext {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    padding-left: 10px;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.product_samosa {
+    height: 6px;
+    width: 12px;
+    margin-bottom: 1px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-left: auto;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-right: 80px;
+}
+
+.headerimage {
+    height: 200;
+    width: auto;
+}
+
+.headertext {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 900;
+    color: #000000;
+}
+
+.headersmalltext {
+    display: inline-block;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 12px;
+    border-bottom: 1px solid #000;
+    color: #000000;
+}
+
+.nav-item {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dropdown {
+    position: relative;
+    text-align: center;
+}
+
+.orderbutton {
+    height: 36px;
+    width: 140px;
+    color: #fbfbfd;
+    font-size: 14px;
+    background: linear-gradient(to left, #57115E 1%, #A100B1 100%);
+    border-radius: 6px;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: normal;
+    cursor: pointer;
+    overflow: visible;
+    outline: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #fbfbfd;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 5px 5px rgba(133, 131, 131, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown_content_tech {
+    display: none;
+    position: fixed;
+    background-color: #fbfbfd;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.dropdown_tech:hover .dropdown_content_tech {
+    display: block;
+}
+
+.dropdown-item {
+    color: #c52424;
+    text-decoration: none;
+    display: block;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding-right: 3%;
+}
+
+.bar {
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 2px 0;
+    border-radius: 16px;
+}
+
+.chargingimage {
+    padding: 1%;
+    border: 5px solid #FCEA38;
+    width: 25%;
+    margin-top: 8%;
+    margin-left: 1.5%;
+    opacity: 1;
+}
+
+.nav-item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-item .dropdown-content a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    margin: 0;
+    border-radius: 0;
+    background-color: #141414;
+    box-shadow: 0px 5px 5px rgba(133, 131, 131, 0.1);
+}
+
+.fixed-header .logo {
+    font-size: 20px;
+}
+
+.fixed-header .nav-item a {
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+}
+
+.box {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.phone_container {
+    display: none;
+}
+
+.revolutiontexts {
+    position: absolute;
+    /* Position text absolutely within the container */
+    bottom: 1%;
+    left: 49%;
+}
+
+.revolutiontext {
+    position: absolute;
+    /* Position text absolutely within the container */
+    bottom: 4%;
+    left: 49%;
+}
+
+.revolutiontex {
+    position: absolute;
+    /* Position text absolutely within the container */
+    bottom: -1%;
+    left: 42.5%;
+}
+
+.arrows {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
+    .logoconatiner {
+        display: flex;
+        padding-left: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-items {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        margin-left: auto;
+        align-items: center;
+        padding-right: 40px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-right: 0px;
+    }
+    .headerlogo {
+        height: 36px;
+        width: 30px;
+    }
+    .header_logo {
+        margin-left: 16px;
+        height: 15px;
+        width: 300px;
+    }
+    .fixed-header .nav-item a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .arrows {
+        display: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .headerimage {
+        height: 150;
+        width: auto;
+    }
+    .logoconatiner {
+        display: flex;
+        padding-left: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-item {
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .dropdowntext {
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .fixed-header .nav-item a {
+        font-size: 12px;
+    }
+    .orderbutton {
+        height: 30px;
+        width: 100px;
+        color: #fbfbfd;
+        font-size: 12px;
+        background-color: #510059;
+        border-radius: 6px;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        line-height: normal;
+        cursor: pointer;
+        overflow: visible;
+        outline: none;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    .headerlogo {
+        height: 32px;
+        width: 26px;
+    }
+    .header_logo {
+        margin-left: 12px;
+        height: 10px;
+        width: 220px;
+    }
+    .nav-items {
+        display: flex;
+        gap: 15px;
+        list-style: none;
+        margin-left: auto;
+        align-items: center;
+        padding-right: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .arrows {
+        display: none;
+    }
+    .product_samosa {
+        content: url('index/samosa1.webp');
+    }
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header_logo {
+        margin-left: 10px;
+        height: 10px;
+        width: 220px;
+    }
+    .logoconatiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        margin-left: 10px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .headerlogo {
+        height: 28px;
+        width: 22px;
+    }
+    .logotext {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 800;
+        padding-left: 5px;
+        align-items: center;
+        color: black;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .dropdowntext {
+        color: #000000;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        background-color: #fbfbfd;
+        position: fixed;
+        top: 2.8%;
+        color: black;
+        width: 102%;
+        height: auto;
+        z-index: 1;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        box-shadow: 0px 5px 5px rgba(133, 131, 131, 0.1);
+        left: -0.5%;
+    }
+    .show-nav {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+        margin-right: 20px;
+    }
+    .nav-item {
+        display: block;
+        margin-top: 24px;
+    }
+    .nav-item a {
+        color: black;
+        text-decoration: none;
+    }
+    .dropdown-item {
+        color: black;
+        padding: 8%;
+    }
+    .container {
+        display: none;
+    }
+    .phone_container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: 720px;
+        max-height: 720px;
+        /* Adjust the height as needed */
+        overflow-y: auto;
+        z-index: 2;
+        box-shadow: 0px 5px 5px rgba(133, 131, 131, 0.1);
+    }
+    .fixednavbar {
+        display: none;
+    }
+    .phone_box1 {
+        flex: 1;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 40px;
+        background-color: #fbfbfd;
+    }
+    .phone_box {
+        flex: 1;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        background-color: #fbfbfd;
+    }
+    .phone_container_heading {
+        display: flex;
+        margin-top: 40px;
+        padding-top: 40px;
+        align-items: center;
+        justify-content: center;
+        background-color: #fbfbfd;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .arrows {
+        display: none;
+    }
+    .product_samosa {
+        content: url('index/samosa1.webp');
+    }
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header_logo {
+        margin-left: 10px;
+        height: 8px;
+        width: 180px;
+    }
+    .logoconatiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        margin-left: 10px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .headerlogo {
+        height: 22px;
+        width: 18px;
+    }
+    .logotext {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 800;
+        padding-left: 5px;
+        align-items: center;
+        color: black;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .dropdowntext {
+        color: #000000;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        background-color: #fbfbfd;
+        position: fixed;
+        top: 2.1%;
+        color: black;
+        width: 102%;
+        height: auto;
+        z-index: 1;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        box-shadow: 0px 5px 5px rgba(133, 131, 131, 0.1);
+        left: -0.5%;
+    }
+    .show-nav {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+        margin-right: 10px;
+    }
+    .nav-item {
+        display: block;
+        margin-top: 24px;
+    }
+    .nav-item a {
+        color: black;
+        text-decoration: none;
+    }
+    .dropdown-item {
+        color: black;
+        padding: 8%;
+    }
+    .container {
+        display: none;
+    }
+    .phone_container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: 720px;
+        max-height: 720px;
+        /* Adjust the height as needed */
+        overflow-y: auto;
+        z-index: 2;
+        box-shadow: 0px 5px 5px rgba(133, 131, 131, 0.1);
+    }
+    .fixednavbar {
+        display: none;
+    }
+    .phone_box1 {
+        flex: 1;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 40px;
+        background-color: #fbfbfd;
+    }
+    .phone_box {
+        flex: 1;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        background-color: #fbfbfd;
+    }
+    .phone_container_heading {
+        display: flex;
+        margin-top: 40px;
+        padding-top: 40px;
+        align-items: center;
+        justify-content: center;
+        background-color: #fbfbfd;
+    }
+}

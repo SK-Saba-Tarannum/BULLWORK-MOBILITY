@@ -1,0 +1,80 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           Int           @id @default(autoincrement())
+  name         String
+  email        String        @unique
+  password     String
+  role         Role          @default(CUSTOMER)
+  isActive     Boolean       @default(true)
+  createdAt    DateTime      @default(now())
+  demoBookings DemoBooking[]
+  orders       Order[]
+}
+
+model Product {
+  id          Int      @id @default(autoincrement())
+  name        String
+  type        String
+  description String
+  tagline     String?
+  price       Float?
+  stock       Int      @default(0)
+  imageUrl    String?
+  videoLink   String?
+  category    String?
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  benefits    String[]
+  features    String[]
+  graph       Json
+  powerSaving Json
+  orders      Order[]
+}
+
+model Order {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  productId Int
+  quantity  Int      @default(1)
+  userType  String
+  name      String
+  phone     String
+  email     String
+  address   String
+  country   String
+  state     String
+  city      String
+  pincode   String
+  aadhar    String?
+  pan       String?
+  message   String?
+  createdAt DateTime @default(now())
+  product   Product  @relation(fields: [productId], references: [id])
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model DemoBooking {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  name      String
+  phone     String
+  email     String
+  address   String
+  product   String
+  message   String?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+enum Role {
+  CUSTOMER
+  ADMIN
+}

@@ -1,0 +1,278 @@
+var swiper = new Swiper('.swiper-containers', {
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+      delay: 100,
+      reverseDirection:true,
+    },
+  speed: 18000, // Adjust speed of carousel (milliseconds)
+  initialSlide: 1 // Start from the second slide
+});
+
+var swiper = new Swiper('.swiper-containerss', {
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+      delay: 100,
+    },
+  speed: 18000, // Adjust speed of carousel (milliseconds)
+  initialSlide: 1 // Start from the second slide
+});
+
+
+var swiper = new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  loop: false, 
+  initialSlide: 0,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
+swiper.on('slideChange', function () {
+  var currentIndex = swiper.activeIndex;
+  var whiteDiv = document.getElementById('white');
+  var purpleDiv = document.getElementById('purple');
+
+  if (currentIndex % 2 === 0) { // Even index
+    whiteDiv.style.backgroundColor = '#510059';
+    purpleDiv.style.backgroundColor = '#ededed';
+  } else { // Odd index
+    whiteDiv.style.backgroundColor = '#ededed';
+    purpleDiv.style.backgroundColor = '#510059';
+  }
+  });
+
+function gotoleftproduct() {
+  swiper.slidePrev();
+}
+
+function gotorightproduct() {
+  swiper.slideNext();
+
+}
+
+
+var swiperblog1 = new Swiper('.swiper-containerblog1', {
+  direction: 'horizontal',
+  loop: false, 
+  initialSlide: 0,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
+function goToSlideblog(index) {
+  swiperblog1.slideToLoop(index); 
+  
+  var whiteDiv = document.getElementById('blogwhite2');
+  var purpleDiv = document.getElementById('blogpurple2');
+  
+
+  var colors = ['#510059', '#ededed'];
+
+  whiteDiv.style.backgroundColor = index === 0 ? colors[0] : colors[1];
+  purpleDiv.style.backgroundColor = index === 1 ? colors[0] : colors[1];
+}
+
+
+swiperblog1.on('slideChange', function () {
+  var currentIndex = swiperblog1.activeIndex;
+  var whiteDivblog = document.getElementById('blogwhite2');
+  var purpleDivblog = document.getElementById('blogpurple2');
+
+  if (currentIndex % 2 === 0) { // Even index
+    whiteDivblog.style.backgroundColor = '#510059';
+    purpleDivblog.style.backgroundColor = '#ededed';
+  } else { // Odd index
+    whiteDivblog.style.backgroundColor = '#ededed';
+    purpleDivblog.style.backgroundColor = '#510059';
+  }
+  });
+
+  function bloggotoleftproduct1() {
+    swiperblog1.slidePrev();
+  }
+  
+  function bloggotorightproduct1(){
+    swiperblog1.slideNext();
+  
+  }
+
+
+var swiper1 = new Swiper('.swiper-container1', {
+  direction: 'horizontal',
+  loop: false, 
+  initialSlide: 0,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
+
+function tabgotoleftproduct() {
+  swiper1.slidePrev();
+}
+
+function tabgotorightproduct() {
+  swiper1.slideNext();
+
+}
+
+swiper1.on('slideChange', function () {
+
+  var currentIndex = swiper1.activeIndex % 3; 
+  var whiteDiv = document.getElementById('white1');
+  var purpleDiv1 = document.getElementById('purple1');
+  var purpleDiv2 = document.getElementById('purple2');
+
+  var colors = ['#510059', '#ededed'];
+
+  
+  whiteDiv.style.backgroundColor = currentIndex === 0 ? colors[0] : colors[1];
+  purpleDiv1.style.backgroundColor = currentIndex === 1 ? colors[0] : colors[1];
+  purpleDiv2.style.backgroundColor = currentIndex === 2 ? colors[0] : colors[1];
+});
+
+
+
+
+function goToSlide(index) {
+  swiper1.slideToLoop(index); 
+  
+  var whiteDiv = document.getElementById('white1');
+  var purpleDiv = document.getElementById('purple1');
+  var purpleDiv1 = document.getElementById('purple2');
+
+  var colors = ['#510059', '#ededed'];
+
+  whiteDiv.style.backgroundColor = index === 0 ? colors[0] : colors[1];
+  purpleDiv.style.backgroundColor = index === 1 ? colors[0] : colors[1];
+  purpleDiv1.style.backgroundColor = index === 2 ? colors[0] : colors[1];
+}
+
+
+var swiper = new Swiper('.blog-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  loop: true,
+});
+
+var swiper = new Swiper('.blog-container1', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  loop: true,
+});
+
+
+var swiper2 = new Swiper('.swiper-container2', {
+  direction: 'horizontal',
+  loop: false, 
+  initialSlide: 0,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
+
+function tabgotoleftproduct1() {
+  swiper2.slidePrev();
+}
+
+function tabgotorightproduct1() {
+  swiper2.slideNext();
+
+}
+
+swiper2.on('slideChange', function () {
+
+  var currentIndex = swiper2.activeIndex % 3; 
+  var whiteDiv = document.getElementById('white2');
+  var purpleDiv1 = document.getElementById('purple3');
+  var purpleDiv2 = document.getElementById('purple4');
+
+  var colors = ['#510059', '#ededed'];
+
+  
+  whiteDiv.style.backgroundColor = currentIndex === 0 ? colors[0] : colors[1];
+  purpleDiv1.style.backgroundColor = currentIndex === 1 ? colors[0] : colors[1];
+  purpleDiv2.style.backgroundColor = currentIndex === 2 ? colors[0] : colors[1];
+});
+
+
+function goToSlide1(index) {
+  swiper2.slideToLoop(index); 
+  
+  var whiteDiv = document.getElementById('white2');
+  var purpleDiv = document.getElementById('purple3');
+  var purpleDiv1 = document.getElementById('purple4');
+
+  var colors = ['#510059', '#ededed'];
+
+  whiteDiv.style.backgroundColor = index === 0 ? colors[0] : colors[1];
+  purpleDiv.style.backgroundColor = index === 1 ? colors[0] : colors[1];
+  purpleDiv1.style.backgroundColor = index === 2 ? colors[0] : colors[1];
+}
+
+
+var swipercarousel = new Swiper('.swiper-containersss', {
+  slidesPerView: 3,
+  spaceBetween: 150,
+  centeredSlides: true,
+  initialSlide: 2,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-containersss .swiper-button-next',
+    prevEl: '.swiper-containersss .swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-containersss .swiper-pagination',
+    clickable: true,
+  },
+});
+
+document.querySelector('.left_arrow').addEventListener('click', function() {
+  swipercarousel.slidePrev();
+
+});
+document.querySelector('.right_arrow').addEventListener('click', function() {
+  swipercarousel.slideNext();
+});
+
+

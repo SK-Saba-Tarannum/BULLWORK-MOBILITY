@@ -1,0 +1,57 @@
+
+
+
+function toggleAnswer(answerId, arrowId) {
+  const answerElement = document.getElementById(answerId);
+  const arrowElement = document.getElementById(arrowId);
+
+  // Get the computed style of the answerElement
+  const computedStyle = window.getComputedStyle(answerElement);
+
+  // Check if the answerElement is currently visible
+  if (computedStyle.display === 'none') {
+    answerElement.style.display = 'block';
+    arrowElement.style.transform = 'rotate(180deg)';
+  } else {
+    answerElement.style.display = 'none';
+    arrowElement.style.transform = 'rotate(0deg)';
+  }
+}
+
+
+
+let draggedElement;
+
+  function startDrag(event) {
+    draggedElement = event.target;
+  }
+
+  function allowDrop(event) {
+    event.preventDefault();
+  }
+
+  function drop(event) {
+    event.preventDefault();
+    const container = document.getElementById('test');
+    const targetElement = event.target;
+
+    if (targetElement !== draggedElement && targetElement.classList.contains('draggable')) {
+      const index1 = Array.prototype.indexOf.call(container.children, draggedElement);
+      const index2 = Array.prototype.indexOf.call(container.children, targetElement);
+
+      if (index1 < index2) {
+        container.insertBefore(draggedElement, targetElement.nextSibling);
+      } else {
+        container.insertBefore(draggedElement, targetElement);
+      }
+    }
+  }
+
+  document.querySelector('.sticky-button').addEventListener('click', function() {
+    document.querySelector('.c-d').classList.toggle('show');
+});
+
+document.querySelector('.sticky-button2').addEventListener('click', function() {
+  document.querySelector('.c-d').classList.toggle('show');
+});
+

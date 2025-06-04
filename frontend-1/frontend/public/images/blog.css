@@ -1,0 +1,607 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fbfbfd;
+}
+
+
+.overallblogs1 {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.overallblogs2 {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.save {
+    margin: 30px;
+}
+
+.invisible-space-card {
+    height: 200px;
+    /* Adjust height as needed */
+    visibility: hidden;
+    /* Ensures the element is invisible */
+}
+
+.productsheading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.productsheading1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.text_conatiner {
+    flex: 4;
+}
+
+.image_container {
+    flex: 2;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}
+
+.productstext {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.productsheading p {
+    text-align: justify;
+}
+
+.discoversmalltext {
+    margin: 0;
+    font-size: 20px;
+    margin-top: 10px;
+    color: black;
+}
+
+.discoversmalltext2 {
+    margin: 0;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #9d9d9d;
+}
+
+.automation_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.automation_video {
+    width: 45vw;
+    border-radius: 12px;
+}
+
+.product_info {
+    height: auto;
+    width: 45vw;
+}
+
+.product_blogs {
+    height: auto;
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.blog_conatiner {
+    display: flex;
+}
+
+.blog1 {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 400px;
+    border-radius: 12px;
+    margin: 5px;
+    box-shadow: 0px 5px 5px rgba(133, 131, 131, 0.2);
+    background-color: #ffffff;
+}
+
+.dummysave {
+    margin: 30px;
+}
+
+.dummyblog {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    border-radius: 12px;
+    margin: 5px;
+    background-color: #fbfbfd;
+}
+
+.protext {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.blogimage {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.blogs {
+    border-radius: 12px;
+}
+
+.blog {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.blogstext {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.blogs_subtext {
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.blogbutton {
+    display: flex;
+    cursor: pointer;
+    border: 1.5px solid #510059;
+    /* Border color */
+    color: #510059;
+    /* Text color */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 28px;
+    height: 40px;
+    width: 120px;
+    margin-top: auto;
+    /* Pushes the button to the bottom */
+    margin-bottom: 40px;
+}
+
+.blogbutton:hover {
+    background-color: #510059;
+    /* Full purple background color on hover */
+    color: white;
+    /* White text color on hover */
+}
+
+@media screen and (max-width: 1600px) {
+    .overallblogs1 {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .overallblogs2 {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .save {
+        margin: 30px;
+    }
+    .dummysave {
+        margin: 30px;
+    }
+    .blog1 {
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        width: 300px;
+        border-radius: 12px;
+        box-shadow: 0px 5px 5px rgba(133, 131, 131, 0.2);
+        background-color: #ffffff;
+    }
+    .dummyblog {
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        width: 300px;
+        border-radius: 12px;
+        background-color: #fbfbfd;
+    }
+    .blogbutton {
+        display: flex;
+        cursor: pointer;
+        border: 1.5px solid #510059;
+        /* Border color */
+        color: #510059;
+        /* Text color */
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 28px;
+        height: 34px;
+        width: 100px;
+        margin-top: auto;
+        /* Pushes the button to the bottom */
+        margin-bottom: 40px;
+    }
+    .product_info {
+        height: auto;
+        width: 70vw;
+    }
+    .product_blogs {
+        height: auto;
+        width: 70vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .automation_video {
+        width: 70vw;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .overallblogs1 {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .overallblogs2 {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .save {
+        margin: 10px;
+    }
+    .dummysave {
+        margin: 10px;
+    }
+    .blog1 {
+        display: flex;
+        flex-direction: column;
+        height: 460px;
+        width: 300px;
+        border-radius: 12px;
+        box-shadow: 0px 5px 5px rgba(133, 131, 131, 0.2);
+        background-color: #ffffff;
+    }
+    .dummyblog {
+        display: flex;
+        flex-direction: column;
+        height: 460px;
+        width: 300px;
+        border-radius: 12px;
+        background-color: #fbfbfd;
+    }
+    .blogbutton {
+        display: flex;
+        cursor: pointer;
+        border: 1.5px solid #510059;
+        /* Border color */
+        color: #510059;
+        /* Text color */
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 28px;
+        height: 34px;
+        width: 100px;
+        margin-top: auto;
+        /* Pushes the button to the bottom */
+        margin-bottom: 40px;
+    }
+    .product_info {
+        height: auto;
+        width: 70vw;
+    }
+    .product_blogs {
+        height: auto;
+        width: 70vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .automation_video {
+        width: 70vw;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dummysave {
+        display: none;
+    }
+    .overallblogs1 {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .overallblogs2 {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .blog1 {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 300px;
+        border-radius: 12px;
+        box-shadow: 0px 5px 5px rgba(133, 131, 131, 0.2);
+        background-color: #ffffff;
+    }
+    .dummyblog {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 300px;
+        border-radius: 12px;
+        background-color: #fbfbfd;
+    }
+    .product_info {
+        height: auto;
+        width: 70vw;
+    }
+    .automation_video {
+        width: 70vw;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .overallblogs1 {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .overallblogs2 {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .blog {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: left;
+    }
+    .blog1 {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 300px;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        box-shadow: 0px 5px 5px rgba(133, 131, 131, 0.2);
+        background-color: #ffffff;
+    }
+    .dummyblog {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 300px;
+        border-radius: 12px;
+        background-color: #fbfbfd;
+    }
+    .product_info {
+        height: auto;
+        width: 70vw;
+    }
+    .automation_video {
+        width: 70vw;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .overallblogs1 {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .overallblogs2 {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .blog_conatiner {
+        display: flex;
+    }
+    .dragcontainer {
+        display: none;
+    }
+    .product_blogs {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog1 {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 250px;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        box-shadow: 0px 5px 5px rgba(133, 131, 131, 0.2);
+        background-color: #ffffff;
+    }
+    .dummyblog {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 250px;
+        margin-bottom: 40px;
+        border-radius: 12px;
+        background-color: #fbfbfd;
+    }
+    .blog {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: left;
+        align-items: start;
+    }
+    .product_info {
+        height: auto;
+        width: 70vw;
+    }
+    .automation_video {
+        width: 70vw;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .overallblogs1 {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .overallblogs2 {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .blog_conatiner {
+        display: flex;
+    }
+    .product_blogs {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog1 {
+        display: flex;
+        flex-direction: column;
+        height: 380px;
+        width: 250px;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        box-shadow: 0px 5px 5px rgba(133, 131, 131, 0.2);
+        background-color: #ffffff;
+    }
+    .dummyblog {
+        display: flex;
+        flex-direction: column;
+        height: 380px;
+        width: 250px;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        background-color: #fbfbfd;
+    }
+    .blog {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: left;
+        align-items: start;
+    }
+    .product_info {
+        height: auto;
+        width: 70vw;
+    }
+    .automation_video {
+        width: 70vw;
+        border-radius: 12px;
+    }
+}

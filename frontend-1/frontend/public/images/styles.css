@@ -1,0 +1,129 @@
+.swiper-container {
+    overflow: hidden;
+    width: 100%;
+    height: 650px; /* Adjust height as needed */
+  }
+  .swiper-container1 {
+    overflow: hidden;
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+  }
+
+  .swiper-containers {
+    overflow: hidden;
+    width: 100%;
+    height: 120px; 
+
+  }
+  
+  .swiper-containerss {
+    overflow: hidden;
+    width: 100%;
+    height: 120px; 
+  }
+
+  .swiper-containerblog{
+    overflow: hidden;
+    width: 100%;
+    height:550px;
+  }
+  .swiper-containerblog1{
+    overflow: hidden;
+    width: 100%;
+    height:550px;
+  }
+
+
+
+
+  @media screen and (max-width: 1600px) {
+
+    .swiper-containerblog{
+      overflow: hidden;
+      width: 100%;
+      height:500px;
+    }
+
+    .swiper-container {
+      overflow: hidden;
+      width: 100%;
+      height: 600px; /* Adjust height as needed */
+    }
+    
+  
+    .swiper-containers {
+      overflow: hidden;
+      width: 100%;
+      height: 100px; 
+  
+    }
+    
+    .swiper-containerss {
+      overflow: hidden;
+      width: 100%;
+      height: 100px; 
+    }
+
+
+  }
+
+  @media screen and (max-width: 1440px) {
+
+    .swiper-containerblog{
+      overflow: hidden;
+      width: 100%;
+      height:470px;
+    }
+
+    .swiper-container {
+      overflow: hidden;
+      width: 100%;
+      height: 600px; /* Adjust height as needed */
+    }
+    
+  
+    .swiper-containers {
+      overflow: hidden;
+      width: 100%;
+      height: 100px; 
+  
+    }
+    
+    .swiper-containerss {
+      overflow: hidden;
+      width: 100%;
+      height: 100px; 
+    }
+
+
+  }
+
+  @media screen and (max-width: 1024px) {
+    .swiper-container1 {
+      overflow: hidden;
+      width: 100%;
+      height: 600px; /* Adjust height as needed */
+    }
+    .swiper-containerblog1{
+      overflow: hidden;
+      width: 100%;
+      height:420px;
+    }
+
+  }
+
+  @media screen and (max-width: 834px) {
+    .swiper-container2{
+      overflow: hidden;
+      width: 100%;
+      height: 450px; /* Adjust height as needed */
+    }
+    .swiper-containerblog1{
+      overflow: hidden;
+      width: 100%;
+      height:420px;
+    }
+  }
+  
+
+  

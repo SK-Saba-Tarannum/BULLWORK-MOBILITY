@@ -1,0 +1,410 @@
+                .contact-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
+                    width: 100%;
+                    border-top-left-radius: 6px;
+                    /* Adjust the value as needed */
+                    border-top-right-radius: 6px;
+                    background-color: #EDEDED;
+                    padding: 10px;
+                    /* Optional padding */
+                    box-sizing: border-box;
+                    /* Ensure padding and border are included in total width */
+                }
+                
+                .contact_text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    border-bottom-left-radius: 6px;
+                    /* Adjust the value as needed */
+                    border-bottom-right-radius: 6px;
+                    padding: 20px;
+                    /* Optional padding */
+                    box-sizing: border-box;
+                }
+                
+                .contact_text1 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: left;
+                    width: 100%;
+                    padding: 0;
+                    /* Optional padding */
+                    box-sizing: border-box;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 10px;
+                    margin-top: 8px;
+                    padding-top: 5px;
+                    background-color: #ededed;
+                }
+                
+                .contacttext {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 20px;
+                    font-weight: 700;
+                    padding-left: 10px;
+                    letter-spacing: 2px;
+                }
+                
+                .contactsubtext {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                
+                .contactsubtext1 {
+                    padding: 0;
+                    margin: 0;
+                    margin-top: 15px;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                
+                .contactsubtext2 {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 14px;
+                    font-weight: 700;
+                    padding-left: 10px;
+                    padding-top: 5px;
+                }
+                
+                .somosacross {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+                
+                .somosacross img {
+                    max-width: 100%;
+                    height: auto;
+                    width: 15px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+                
+                .contact-button {
+                    background: linear-gradient(to top, #DD8401 1%, #FFA726 100%);
+                    border: none;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 14px;
+                    height: 45px;
+                    width: 350px;
+                    cursor: pointer;
+                    border-radius: 20px;
+                    text-align: center;
+                    margin-top: 15px;
+                    text-decoration: underline;
+                    /* Underline the text */
+                }
+                
+                .contact-button1 {
+                    border: 1px solid black;
+                    /* Border color */
+                    background-color: #ffffff;
+                    color: black;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 14px;
+                    height: 45px;
+                    width: 350px;
+                    cursor: pointer;
+                    border-radius: 20px;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                
+                .sticky-button3 {
+                    width: 25px;
+                }
+                
+                .sticky-button {
+                    height: 40px;
+                    width: 40px;
+                    cursor: pointer;
+                }
+                
+                .contact_us {
+                    position: fixed;
+                    bottom: 10%;
+                    height: 40px;
+                    width: 50px;
+                    background-color: #FFFFFF;
+                    right: 0;
+                    z-index: 10;
+                    border-top-left-radius: 50%;
+                    /* Adjust the value as needed */
+                    border-bottom-left-radius: 50%;
+                    /* Adjust the value as needed */
+                }
+                
+                .c-d {
+                    display: none;
+                    /* Hide the container initially */
+                    transition: all 0.3s ease;
+                    /* Smooth transition */
+                    position: fixed;
+                    bottom: 5%;
+                    height: auto;
+                    width: 400px;
+                    right: 0;
+                    border-radius: 6px;
+                    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+                    z-index: 10;
+                    background-color: #FFFFFF;
+                    /* Example color */
+                }
+                
+                .c-d.show {
+                    display: block;
+                    /* Show the container when .show class is added */
+                }
+                
+                @media screen and (max-width: 768px) {
+                    .contacttext {
+                        padding: 0;
+                        margin: 0;
+                        font-size: 16px;
+                        font-weight: 700;
+                        padding-left: 10px;
+                        letter-spacing: 2px;
+                    }
+                    .card-container1 {
+                        width: 90%;
+                        margin: 0;
+                    }
+                    .contactsubtext {
+                        padding: 0;
+                        margin: 0;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    .contactsubtext1 {
+                        padding: 0;
+                        margin: 0;
+                        margin-top: 15px;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    .contactsubtext2 {
+                        padding: 0;
+                        margin: 0;
+                        font-size: 12px;
+                        font-weight: 700;
+                        padding-left: 10px;
+                        padding-top: 5px;
+                    }
+                    .somosacross {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    }
+                    .somosacross img {
+                        max-width: 100%;
+                        height: auto;
+                        width: 12px;
+                        margin-right: 10px;
+                    }
+                    .contact-button {
+                        background: linear-gradient(to top, #DD8401 1%, #FFA726 100%);
+                        border: none;
+                        color: white;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 14px;
+                        height: 40px;
+                        width: 250px;
+                        cursor: pointer;
+                        border-radius: 20px;
+                        text-align: center;
+                        margin-top: 15px;
+                        text-decoration: underline;
+                        /* Underline the text */
+                    }
+                    .contact-button1 {
+                        border: 1px solid black;
+                        /* Border color */
+                        background-color: #ffffff;
+                        color: black;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 14px;
+                        height: 40px;
+                        width: 250px;
+                        cursor: pointer;
+                        border-radius: 20px;
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                    .sticky-button3 {
+                        width: 25px;
+                    }
+                    .sticky-button {
+                        height: 40px;
+                        width: 40px;
+                    }
+                    .contact_us {
+                        position: fixed;
+                        bottom: 10%;
+                        height: 40px;
+                        width: 50px;
+                        background-color: #FFFFFF;
+                        right: 0;
+                        z-index: 10;
+                        border-top-left-radius: 50%;
+                        /* Adjust the value as needed */
+                        border-bottom-left-radius: 50%;
+                        /* Adjust the value as needed */
+                    }
+                    .c-d {
+                        display: none;
+                        /* Hide the container initially */
+                        transition: all 0.3s ease;
+                        /* Smooth transition */
+                        position: fixed;
+                        bottom: 5%;
+                        height: auto;
+                        width: 275px;
+                        right: 0;
+                        border-radius: 6px;
+                        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+                        z-index: 10;
+                        background-color: #FFFFFF;
+                        /* Example color */
+                    }
+                }
+                
+                @media screen and (max-width: 480px) {
+                    .contacttext {
+                        padding: 0;
+                        margin: 0;
+                        font-size: 16px;
+                        font-weight: 700;
+                        padding-left: 10px;
+                        letter-spacing: 2px;
+                    }
+                    .card-container1 {
+                        width: 90%;
+                        margin: 0;
+                    }
+                    .contactsubtext {
+                        padding: 0;
+                        margin: 0;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    .contactsubtext1 {
+                        padding: 0;
+                        margin: 0;
+                        margin-top: 15px;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    .contactsubtext2 {
+                        padding: 0;
+                        margin: 0;
+                        font-size: 12px;
+                        font-weight: 700;
+                        padding-left: 10px;
+                        padding-top: 5px;
+                    }
+                    .somosacross {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    }
+                    .somosacross img {
+                        max-width: 100%;
+                        height: auto;
+                        width: 12px;
+                        margin-right: 10px;
+                    }
+                    .contact-button {
+                        background: linear-gradient(to top, #DD8401 1%, #FFA726 100%);
+                        border: none;
+                        color: white;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 14px;
+                        height: 40px;
+                        width: 250px;
+                        cursor: pointer;
+                        border-radius: 20px;
+                        text-align: center;
+                        margin-top: 15px;
+                        text-decoration: underline;
+                        /* Underline the text */
+                    }
+                    .contact-button1 {
+                        border: 1px solid black;
+                        /* Border color */
+                        background-color: #ffffff;
+                        color: black;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 14px;
+                        height: 40px;
+                        width: 250px;
+                        cursor: pointer;
+                        border-radius: 20px;
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                    .sticky-button3 {
+                        width: 25px;
+                    }
+                    .sticky-button {
+                        height: 40px;
+                        width: 40px;
+                    }
+                    .contact_us {
+                        position: fixed;
+                        bottom: 10%;
+                        height: 40px;
+                        width: 50px;
+                        background-color: #FFFFFF;
+                        right: 0;
+                        z-index: 10;
+                        border-top-left-radius: 50%;
+                        /* Adjust the value as needed */
+                        border-bottom-left-radius: 50%;
+                        /* Adjust the value as needed */
+                    }
+                    .c-d {
+                        display: none;
+                        /* Hide the container initially */
+                        transition: all 0.3s ease;
+                        /* Smooth transition */
+                        position: fixed;
+                        bottom: 5%;
+                        height: auto;
+                        width: 275px;
+                        right: 0;
+                        border-radius: 6px;
+                        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+                        z-index: 10;
+                        background-color: #FFFFFF;
+                        /* Example color */
+                    }
+                }
