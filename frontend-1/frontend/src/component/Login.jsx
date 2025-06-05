@@ -40,9 +40,9 @@ function Login() {
   
       setTimeout(() => {
         if (user.role === 'ADMIN') {
-          navigate('/ordershistory'); // admin
+          navigate('/ordershistory'); 
         } else {
-          navigate('/order'); // customer
+          navigate('/order');
         }
       }, 1000);
   
