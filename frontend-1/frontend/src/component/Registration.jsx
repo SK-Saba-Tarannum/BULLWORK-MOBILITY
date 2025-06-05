@@ -21,7 +21,7 @@ function Registration() {
     }
   
     try {
-      const res = await axios.post('http://localhost:5002/api/auth/signup', {
+      const res = await axios.post('https://bullwork-mobility.onrender.com/api/auth/signup', {
         name,
         email,
         password,

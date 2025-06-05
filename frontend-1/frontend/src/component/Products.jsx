@@ -16,7 +16,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:5002/api/products/allproducts");
+        const res = await axios.get("https://bullwork-mobility.onrender.com/api/products/allproducts");
         setProducts(res.data);
       } catch (err) {
         console.error("Failed to fetch products", err);

@@ -11,7 +11,7 @@ const AllProducts = () => {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:5002/api/products/allproducts");
+      const res = await axios.get("https://bullwork-mobility.onrender.com/api/products/allproducts");
       setProducts(res.data);
     } catch (err) {
       console.error("Error fetching products:", err);
@@ -36,7 +36,7 @@ const AllProducts = () => {
     try {
       const token = localStorage.getItem("token");
       console.log(token)
-      await axios.delete(`http://localhost:5002/api/products/${id}`, {
+      await axios.delete(`https://bullwork-mobility.onrender.com/api/products/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setProducts((prev) => prev.filter((p) => p.id !== id));

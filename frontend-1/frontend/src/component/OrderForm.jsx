@@ -56,7 +56,7 @@ const OrderForm = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:5002/api/products/allproducts");
+        const res = await axios.get("https://bullwork-mobility.onrender.com/api/products/allproducts");
         setProducts(res.data);
       } catch (err) {
         console.error("Failed to fetch products", err);
@@ -92,7 +92,7 @@ const OrderForm = () => {
     };
   
     try {
-      const response = await axios.post("http://localhost:5002/api/order", data, {
+      const response = await axios.post("https://bullwork-mobility.onrender.com/api/order", data, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
