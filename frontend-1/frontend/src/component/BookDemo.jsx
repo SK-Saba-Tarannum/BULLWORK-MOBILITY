@@ -20,7 +20,6 @@ const BookDemo = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Demo booked:", formData);
-    // Add form submission logic here (e.g. API call)
   };
 
   return (

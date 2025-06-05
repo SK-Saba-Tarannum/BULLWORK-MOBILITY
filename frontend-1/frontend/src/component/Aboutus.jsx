@@ -7,20 +7,20 @@ const coFounders = [
   {
     name: "Hemanth Kumar",
     title: "CEO",
-    image: "hemanth.webp", // Replace with your image path
-    linkedin: "https://linkedin.com/in/hemanth-kumar", // Replace with actual link
+    image: "hemanth.webp", 
+    linkedin: "https://linkedin.com/in/hemanth-kumar", 
   },
   {
     name: "Dr. Sriharsha Sheshanarayana",
     title: "CTO",
     image: "harsha.webp",
-    linkedin: "https://linkedin.com/in/sriharsha", // Replace with actual link
+    linkedin: "https://linkedin.com/in/sriharsha", 
   },
   {
     name: "Vinay Raghuram",
     title: "COO",
     image: "vinay.webp",
-    linkedin: "https://linkedin.com/in/vinayraghuram", // Replace with actual link
+    linkedin: "https://linkedin.com/in/vinayraghuram", 
   },
 ];
 
@@ -47,12 +47,9 @@ const Aboutus = () => {
       <h2 className="text-3xl md:text-4xl font-semibold mb-6">
         Meet the Bullwork Team
       </h2>
-      {/* <p className="text-gray-700 mb-10 max-w-3xl mx-auto text-base md:text-lg">
-        We're a diverse team of innovators, engineers, and dreamers building the future of mobility together.
-      </p>   */}
       <div className="overflow-hidden  shadow-md  mx-auto">
         <img
-          src="/teampic.webp" // Replace with your actual image path
+          src="/teampic.webp" 
           alt="Bullwork Team Group Photo"
           className="w-full h-auto object-cover"
         />
@@ -70,14 +67,13 @@ const Aboutus = () => {
         <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-8">
           <div className="bg-amber-100 p-4 rounded-xl shadow-md">
             <img
-              src="/mahesh shetty.webp" // Replace with actual image path
+              src="/mahesh shetty.webp" 
               alt="Mr. Mahesh Shetty"
               className="w-64 h-auto object-contain rounded"
             />
           </div>
         </div>
 
-        {/* Text Section */}
         <div className="text-center md:text-left max-w-xl">
           <h3 className="text-xl md:text-2xl font-bold mb-2">
             OUR GUIDING PARTNER
@@ -140,10 +136,6 @@ const Aboutus = () => {
         ))}
       </div>
     </section>
-
-
-
-
 
     <Footer/>
     </>

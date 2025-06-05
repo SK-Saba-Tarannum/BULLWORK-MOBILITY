@@ -11,7 +11,6 @@ import { useNavigate } from 'react-router-dom';
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import OrderForm from './OrderForm';
-// import './LogoMarquee.css'; // We’ll define animation styles here
 
 const pressReleases = [
   { alt: 'The Ken', src: '/press2.webp' },
@@ -132,7 +131,7 @@ const blogs = [
     description:
       'Say goodbye to diesel hassles—introducing the GLX Bullwork, India’s first electric skid steer loader,',
     image:
-      'twentyone.webp', // Replace with actual image URL
+      'twentyone.webp', 
   },
   {
     title: 'The Bullwork BEAST: India’s First Electric Autonomous Tractor',
@@ -173,14 +172,11 @@ const Home = () => {
 
 
 <section className="relative h-[40vh] sm:h-[30vh] md:h-[42vh] lg:h-[96vh] bg-gray-100">
-  {/* Hero Image */}
   <img
     src="/homerender_main.png"
     alt="Bullwork Machines"
     className="w-full h-[40vh] sm:h-[20vh] md:h-[40vh] lg:h-[96vh] object-cover"
   />
-
-  {/* Text & Button Overlay */}
   <div className="absolute inset-0 flex  flex-col items-center justify-end text-center pb-12">
     <button
       onClick={() => { navigate("/order") }}
@@ -393,7 +389,7 @@ const Home = () => {
     <section className="relative bg-gray-100">
       {/* Hero Image */}
       <img
-        src="greener_tractor.webp" // <- Replace with your image path (add to /public folder)
+        src="greener_tractor.webp" 
         alt="Bullwork Machines"
         className="w-full object-cover  h-[20vh] sm:h-[20vh] md:h-[40vh] lg:h-[96vh]"
 
@@ -405,7 +401,7 @@ const Home = () => {
       <h1 className='text-4xl  text-center mt-10 font-semibold tracking-wide'>Showcasing the innovation</h1>
       <p className='text-purple-900 text-center mt-3'>Bullwork's Electric Vehicles at Major Events</p>
       <img
-        src="events.webp" // <- Replace with your image path (add to /public folder)
+        src="events.webp" 
         alt="Bullwork Machines"
         className="w-full object-cover h-[20vh] sm:h-[20vh] md:h-[40vh] lg:h-[96vh]"
 

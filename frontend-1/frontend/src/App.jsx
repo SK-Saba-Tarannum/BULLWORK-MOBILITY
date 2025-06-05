@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './component/Home';
-import OrderForm from './component/OrderForm'; // example
+import OrderForm from './component/OrderForm';
 import BookDemo from './component/BookDemo';
 import Technology from './component/Technology';
 import Aboutus from './component/Aboutus';
@@ -12,7 +12,7 @@ import ProductDetails from './component/ProductDetails';
 import AddProduct from './component/AddProduct';
 import Login from "./component/Login";
 import Registration from "./component/Registration";
-import OrdersHistory from './component/OrdersHistory'; // example
+import OrdersHistory from './component/OrdersHistory'; 
 import Order1 from "./component/Orders1.jsx"
 import AllProducts from './component/AllProducts';
 

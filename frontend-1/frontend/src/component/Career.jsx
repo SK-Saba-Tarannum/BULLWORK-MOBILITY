@@ -18,14 +18,6 @@ const lifeImages = [
   "life5.webp",
   "life6.webp",
 ];
-// const galleryImages = [
-//     "gallery1.webp",
-//     "gallery2.webp",
-//     "gallery3.webp",
-//     "gallery4.webp",
-//     "gallery5.webp",
-//     // "gallery6.webp",
-//   ];
 
 const galleryImages = [
     {
@@ -136,34 +128,17 @@ const Career = () => {
 
       {/* Slider */}
       <div className="overflow-hidden">
-        {/* <div className="flex sm:grid gap-6 animate-scroll px-4">
-          {galleryImages.map((img, index) => (
-            <div
-              key={index}
-              className="min-w-[275px] flex-shrink-0 bg-white rounded-2xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"
-            >
-              <img
-                src={img.src}
-                alt={img.title}
-                className="w-full h-64 object-cover"
-              />
-              <p className="text-center italic font-semibold py-4">{img.title}</p>
-            </div>
-          ))}
-        </div> */}
+      
         <Marquee direction="left" speed={100} gradient={false} className='mt-4'>
         {[...galleryImages,...galleryImages].map((item, index) => (
-        //   <img key={index} src={item.src} alt={item.alt} className="h-32 mx-6" />
         <div
             key={index}
             className="min-w-[275px] flex gap-6 bg-white rounded-2xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"
         >
             <img
             src={item.src}
-            // alt={item.title}
             className="w-full h-92 object-cover m-4"
             />
-            {/* <p className="text-center italic font-semibold py-4">{item.title}</p> */}
         </div>
 
         ))}
@@ -217,9 +192,6 @@ const Career = () => {
         </div>
       </div>
     </section>
-
-
-
 
     <Footer/>
     </>

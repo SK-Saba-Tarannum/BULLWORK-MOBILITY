@@ -4,9 +4,7 @@ import { MdLocationOn } from "react-icons/md";
 export default function Footer() {
   return (
     <footer className="bg-black text-white px-4 sm:px-6 md:px-16 py-10">
-      {/* Grid layout adapts for all screen sizes */}
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-        {/* Left Column: Logo, Social, Subscribe */}
         <div>
           <img src="logo.webp" alt="Bullwork Mobility" className="h-10 mb-4" />
           <p className="font-semibold mb-2">Connect with us on</p>
@@ -34,7 +32,6 @@ export default function Footer() {
           </form>
         </div>
 
-        {/* Center Column: Contact Info */}
         <div>
           <h3 className="font-bold mb-4">CONTACT US</h3>
           <p className="mb-1">
@@ -58,7 +55,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Right Column: Footer Links */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
           <div>
             <h4 className="font-bold mb-2">COMPANY</h4>

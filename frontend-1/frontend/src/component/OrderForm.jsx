@@ -130,11 +130,7 @@ const OrderForm = () => {
         autoClose: 5000,
       });
     
-    // } catch (error) {
-    //   console.error("Error submitting order:", error.response?.data || error.message);
-    //   alert(error?.response?.data?.error || "Order submission failed.");
-    // }
-  }
+   }
 };
   
 
@@ -178,14 +174,14 @@ const OrderForm = () => {
             </button>
           </div>
 
-          {/* Form */}
+      
           <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Enter Name" required className="border p-3 rounded-md w-full" />
             <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Enter Phone Number" required className="border p-3 rounded-md w-full" />
             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter Email Address" required className="border p-3 rounded-md w-full" />
             <input type="text" value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Enter Address" className="border p-3 rounded-md w-full" />
 
-            {/* Country */}
+        
             <select
               className="w-full p-3 border rounded"
               value={selectedCountry}
@@ -200,7 +196,7 @@ const OrderForm = () => {
               ))}
             </select>
 
-            {/* State */}
+            
             <select
               className="w-full p-3 border rounded"
               value={selectedState}
@@ -216,7 +212,7 @@ const OrderForm = () => {
               ))}
             </select>
 
-            {/* City */}
+        
             <select
               className="w-full p-3 border rounded"
               value={selectedCity}
@@ -236,7 +232,7 @@ const OrderForm = () => {
             <input type="text" value={aadhar} onChange={(e) => setAadhar(e.target.value)} placeholder="Enter Aadhar Number" className="border p-3 rounded-md w-full" />
             <input type="text" value={pan} onChange={(e) => setPan(e.target.value)} placeholder="Enter Pan Number" className="border p-3 rounded-md w-full" />
 
-            {/* Product Dropdown */}
+  
             <select
               value={productId}
               onChange={(e) => setProductId(e.target.value)}
