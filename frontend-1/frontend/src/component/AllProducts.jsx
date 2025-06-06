@@ -23,7 +23,7 @@ const AllProducts = () => {
   }, []);
 
   const handleAddProduct = () => {
-    navigate("/add-product");
+    navigate("/addproduct");
   };
 
   const handleEditProduct = (id) => {
