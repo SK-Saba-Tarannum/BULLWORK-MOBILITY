@@ -174,20 +174,50 @@ export default function AddProduct() {
     setForm({ ...form, graph: { ...form.graph, data: newData } });
   };
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const res = await fetch('https://bullwork-mobility.onrender.com/api/products/addproduct', {
+  //       method: 'POST',
+  //       headers: { 'Content-Type': 'application/json' },
+  //       body: JSON.stringify(form),
+  //     });
+  //     if (res.ok) alert('✅ Product saved!');
+  //     else alert('❌ Error saving product.');
+  //   } catch (err) {
+  //     console.error('Failed to submit:', err);
+  //   }
+  // };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+  
+    // Get token from localStorage (or wherever you store it)
+    const token = localStorage.getItem('token'); // or use context
+  
     try {
       const res = await fetch('https://bullwork-mobility.onrender.com/api/products/addproduct', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`, // Include the token here
+        },
         body: JSON.stringify(form),
       });
-      if (res.ok) alert('✅ Product saved!');
-      else alert('❌ Error saving product.');
+  
+      if (res.ok) {
+        alert('✅ Product saved!');
+      } else if (res.status === 401) {
+        alert('🚫 Unauthorized: Please log in.');
+      } else {
+        alert('❌ Error saving product.');
+      }
     } catch (err) {
       console.error('Failed to submit:', err);
+      alert('❌ Submission failed. Check the console for details.');
     }
   };
+  
 
   const renderInput = (label, name, type = 'text') => (
     <div>
