@@ -40,16 +40,16 @@ const BookDemo = () => {
         return;
       }
   
-      const isoScheduledDate = formData.scheduledDate
-        ? new Date(formData.scheduledDate + "T00:00:00Z").toISOString()
-        : "";
+      // const isoScheduledDate = formData.scheduledDate
+      //   ? new Date(formData.scheduledDate + "T00:00:00Z").toISOString()
+      //   : "";
   
       const response = await axios.post(
         "https://bullwork-mobility.onrender.com/api/demo",
         {
           userId,
           ...formData,
-          scheduledDate: isoScheduledDate, // send the converted ISO string
+          // scheduledDate: isoScheduledDate, // send the converted ISO string
         }
       );
   
@@ -62,7 +62,7 @@ const BookDemo = () => {
           address: "",
           product: "Beast",
           message: "",
-          scheduledDate: "",
+          // scheduledDate: "",
         });
       } else {
         setStatus(" Something went wrong.");
@@ -148,14 +148,14 @@ const BookDemo = () => {
               <option value="Vamana">Vamana</option>
               <option value="GLX">GLX</option>
             </select>
-            <input
+            {/* <input
               type="date"
               name="scheduledDate"
               value={formData.scheduledDate}
               onChange={handleChange}
               className="border p-3 rounded-md w-full"
               required
-            />
+            /> */}
             <textarea
               name="message"
               placeholder="Enter Message"

@@ -1,7 +1,7 @@
 const demoService = require('../services/demo.service');
 
 exports.bookDemo = async (req, res) => {
-  const { userId, name, phone, email, address, product, message, scheduledDate } = req.body;
+  const { userId, name, phone, email, address, product, message} = req.body;
 
   try {
     const demo = await demoService.createDemoBooking({
@@ -12,7 +12,7 @@ exports.bookDemo = async (req, res) => {
       address,
       product,
       message,
-      scheduledDate, 
+      // scheduledDate, 
     });
 
     res.status(201).json(demo);
