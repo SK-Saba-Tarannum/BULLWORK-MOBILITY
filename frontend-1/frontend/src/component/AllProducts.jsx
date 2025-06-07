@@ -26,10 +26,7 @@ const AllProducts = () => {
     navigate("/addproduct");
   };
 
-  const handleEditProduct = (id) => {
-    navigate(`/edit-product/${id}`);
-  };
-
+  
   const handleDeleteProduct = async (id) => {
     if (!window.confirm("Are you sure you want to delete this product?")) return;
 
@@ -80,21 +77,12 @@ const AllProducts = () => {
                 <div className="flex-grow text-left">
                   <h3 className="text-xl font-semibold text-purple-900 mb-1">{product.name}</h3>
                   <p className="text-sm text-gray-600 mb-1">
-                    <strong>Price:</strong> ₹{product.price}
-                  </p>
-                  <p className="text-sm text-gray-600 mb-1">
                     <strong>Stock:</strong> {product.stock}
                   </p>
                   <p className="text-sm text-gray-500">{product.tagline}</p>
                 </div>
 
                 <div className="flex flex-col gap-2 md:ml-4">
-                  <button
-                    onClick={() => handleEditProduct(product.id)}
-                    className="flex items-center gap-1 px-4 py-2 bg-gray-200 text-black rounded-md hover:bg-purple-200 text-sm font-medium shadow"
-                  >
-                    <Edit3 className="w-4 h-4" /> Edit
-                  </button>
                   <button
                     onClick={() => handleDeleteProduct(product.id)}
                     className="flex items-center gap-1 px-4 py-2 bg-fuchsia-800 text-white rounded-md hover:bg-purple-900 text-sm font-medium shadow"

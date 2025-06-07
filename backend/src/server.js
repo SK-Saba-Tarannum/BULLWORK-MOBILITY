@@ -27,8 +27,8 @@ const demoRoutes = require('./routes/demo.routes.js');
 
 app.use('/api/auth', authRoutes); 
 app.use('/api/products', productRoutes);
-app.use('/api', orderRoutes);
-app.use('/api', demoRoutes);
+app.use('/api/order', orderRoutes);
+app.use('/api/demo', demoRoutes);
 
 const PORT = process.env.PORT || 5002;
 app.listen(PORT, () => {
