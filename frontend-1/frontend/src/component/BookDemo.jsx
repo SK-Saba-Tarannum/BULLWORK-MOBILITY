@@ -10,62 +10,98 @@ const BookDemo = () => {
     email: "",
     address: "",
     product: "Beast",
-    message: ""
+    message: "",
+    scheduledDate: "",
   });
 
   const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
-      const response = await axios.post("https://bullwork-mobility.onrender.com/api/demo/book-demo", {
-        userId: 1, // replace with real logged-in user's ID later
-        name: formData.name,
-        phone: formData.phone,
-        email: formData.email,
-        address: formData.address,
-        product: formData.product,
-        message: formData.message
-      });
-
+      const storedUser = localStorage.getItem("user");
+      if (!storedUser) {
+        setStatus(" User not logged in.");
+        return;
+      }
+  
+      const user = JSON.parse(storedUser);
+      const userId = user?.id;
+  
+      if (!userId) {
+        setStatus("Invalid user data in localStorage.");
+        return;
+      }
+  
+      const isoScheduledDate = formData.scheduledDate
+        ? new Date(formData.scheduledDate + "T00:00:00Z").toISOString()
+        : "";
+  
+      const response = await axios.post(
+        "https://bullwork-mobility.onrender.com/api/demo",
+        {
+          userId,
+          ...formData,
+          scheduledDate: isoScheduledDate, // send the converted ISO string
+        }
+      );
+  
       if (response.status === 201) {
-        setStatus("✅ Demo booked successfully!");
+        setStatus(" Demo booked successfully!");
         setFormData({
           name: "",
           phone: "",
           email: "",
           address: "",
           product: "Beast",
-          message: ""
+          message: "",
+          scheduledDate: "",
         });
       } else {
-        setStatus("⚠️ Something went wrong.");
+        setStatus(" Something went wrong.");
       }
     } catch (error) {
-      console.error("Error booking demo:", error.response?.data || error.message);
-      setStatus("❌ Failed to book demo. Check the console for details.");
+      console.error("Error booking demo:", error);
+  
+      const message =
+        error?.response?.data?.error ||
+        error?.response?.data?.message ||
+        error.message ||
+        "Failed to book demo. Check console for details.";
+  
+      setStatus(message);
     }
   };
-
+  
   return (
     <>
       <Navbar />
       <div className="min-h-screen bg-gray-50 py-10 px-4 sm:px-6 md:px-20">
-        <h2 className="text-3xl font-bold text-center text-purple-900 mb-2">BOOK A DEMO</h2>
-        <p className="text-center text-lg mb-8">Fill in the below details to book a product demo</p>
+        <h2 className="text-3xl font-bold text-center text-purple-900 mb-2">
+          BOOK A DEMO
+        </h2>
+        <p className="text-center text-lg mb-8">
+          Fill in the below details to book a product demo
+        </p>
 
         {status && (
-          <p className="text-center mb-4 text-lg font-semibold text-red-600">{status}</p>
+          <p className="text-center mb-4 text-lg font-semibold text-red-600">
+            {status}
+          </p>
         )}
 
         <div className="max-w-4xl mx-auto bg-white p-6 sm:p-8 rounded-lg shadow">
-          <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+          <form
+            onSubmit={handleSubmit}
+            className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6"
+          >
             <input
               name="name"
               type="text"
@@ -99,18 +135,27 @@ const BookDemo = () => {
               placeholder="Enter Address"
               value={formData.address}
               onChange={handleChange}
+              required
               className="border p-3 rounded-md w-full"
             />
             <select
               name="product"
               value={formData.product}
               onChange={handleChange}
-              className="border p-3 rounded-md w-full sm:col-span-2"
+              className="border p-3 rounded-md w-full"
             >
               <option value="Beast">Beast</option>
               <option value="Vamana">Vamana</option>
               <option value="GLX">GLX</option>
             </select>
+            <input
+              type="date"
+              name="scheduledDate"
+              value={formData.scheduledDate}
+              onChange={handleChange}
+              className="border p-3 rounded-md w-full"
+              required
+            />
             <textarea
               name="message"
               placeholder="Enter Message"

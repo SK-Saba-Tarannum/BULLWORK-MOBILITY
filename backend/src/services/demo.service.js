@@ -11,7 +11,7 @@ exports.createDemoBooking = async (data) => {
       address: data.address,
       product: data.product,
       message: data.message,
-      scheduledDate: data.scheduledDate ? new Date(data.scheduledDate) : null
+      scheduledDate: parsedDate,
     }
   });
 };

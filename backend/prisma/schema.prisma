@@ -70,6 +70,8 @@ model DemoBooking {
   address   String
   product   String
   message   String?
+  scheduledDate DateTime?  // ✅ Add this line
+
   createdAt DateTime @default(now())
   user      User     @relation(fields: [userId], references: [id])
 }
