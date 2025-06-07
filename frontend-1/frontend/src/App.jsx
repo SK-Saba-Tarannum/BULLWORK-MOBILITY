@@ -15,7 +15,7 @@ import Registration from "./component/Registration";
 import OrdersHistory from './component/OrdersHistory'; 
 import Order1 from "./component/Orders1.jsx"
 import AllProducts from './component/AllProducts';
-
+import DemoList from "./component/DemoList";
 function App() {
   return (
     <Router>
@@ -34,7 +34,7 @@ function App() {
         <Route path="/ordershistory" element={<OrdersHistory/>} />
         <Route path="/order1" element={<Order1/>} />
         <Route path="/allproducts" element={<AllProducts />} />
-
+        <Route path="/demolist" element={<DemoList />} />
       </Routes>
     </Router>
   );

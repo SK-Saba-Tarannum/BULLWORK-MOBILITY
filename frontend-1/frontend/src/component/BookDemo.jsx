@@ -9,9 +9,8 @@ const BookDemo = () => {
     phone: "",
     email: "",
     address: "",
-    product: "Beast",
+    product: "",
     message: "",
-    scheduledDate: "",
   });
 
   const [status, setStatus] = useState("");
@@ -40,16 +39,12 @@ const BookDemo = () => {
         return;
       }
   
-      // const isoScheduledDate = formData.scheduledDate
-      //   ? new Date(formData.scheduledDate + "T00:00:00Z").toISOString()
-      //   : "";
-  
+      
       const response = await axios.post(
         "https://bullwork-mobility.onrender.com/api/demo",
         {
           userId,
           ...formData,
-          // scheduledDate: isoScheduledDate, // send the converted ISO string
         }
       );
   
@@ -60,9 +55,8 @@ const BookDemo = () => {
           phone: "",
           email: "",
           address: "",
-          product: "Beast",
+          product: "",
           message: "",
-          // scheduledDate: "",
         });
       } else {
         setStatus(" Something went wrong.");
@@ -71,9 +65,6 @@ const BookDemo = () => {
       console.error("Error booking demo:", error);
   
       const message =
-        error?.response?.data?.error ||
-        error?.response?.data?.message ||
-        error.message ||
         "Failed to book demo. Check console for details.";
   
       setStatus(message);
@@ -147,15 +138,10 @@ const BookDemo = () => {
               <option value="Beast">Beast</option>
               <option value="Vamana">Vamana</option>
               <option value="GLX">GLX</option>
+              <option value="WARRIOR">Warrior</option>
+              <option value="OX">OX</option>
+
             </select>
-            {/* <input
-              type="date"
-              name="scheduledDate"
-              value={formData.scheduledDate}
-              onChange={handleChange}
-              className="border p-3 rounded-md w-full"
-              required
-            /> */}
             <textarea
               name="message"
               placeholder="Enter Message"

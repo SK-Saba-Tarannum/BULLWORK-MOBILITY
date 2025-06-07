@@ -33,12 +33,21 @@ const OrdersHistory = () => {
       <div className="min-h-screen bg-gray-50 py-10 px-4">
         <div className="max-w-6xl mx-auto mb-8 flex justify-between items-center">
           <h2 className="text-4xl font-bold text-purple-900">Order History</h2>
-          <button
-            onClick={goToProductsPage}
-            className="px-5 py-2.5 bg-purple-900 text-white rounded-xl hover:bg-fuchsia-800 transition-all shadow-md"
-          >
-            Product Details
-          </button>
+          <div className="flex gap-3">
+            <button
+              onClick={()=>{navigate("/demolist")}}
+              className="px-5 py-2.5 bg-purple-900 text-white rounded-xl hover:bg-fuchsia-800 transition-all shadow-md"
+            >
+              Demo Booking Details
+            </button>
+            <button
+              onClick={goToProductsPage}
+              className="px-5 py-2.5 bg-purple-900 text-white rounded-xl hover:bg-fuchsia-800 transition-all shadow-md"
+            >
+              Product Details
+            </button>
+          </div>
+       
         </div>
 
         <div className="space-y-6 max-w-6xl mx-auto">

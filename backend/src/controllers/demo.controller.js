@@ -12,7 +12,6 @@ exports.bookDemo = async (req, res) => {
       address,
       product,
       message,
-      // scheduledDate, 
     });
 
     res.status(201).json(demo);
