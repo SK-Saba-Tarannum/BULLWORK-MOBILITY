@@ -1,6 +1,8 @@
 const demoService = require('../services/demo.service');
 
 exports.bookDemo = async (req, res) => {
+  const { userId, name, phone, email, address, product, message } = req.body;
+
   try {
     const demo = await demoService.createDemoBooking(req.body);
     res.status(201).json(demo);

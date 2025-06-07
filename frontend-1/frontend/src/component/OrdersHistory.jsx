@@ -11,7 +11,7 @@ const OrdersHistory = () => {
 
   const fetchOrders = async () => {
     try {
-      const res = await axios.get("https://bullwork-mobility.onrender.com/api/orders");
+      const res = await axios.get("https://bullwork-mobility.onrender.com/api/order");
       setOrders(res.data);
     } catch (err) {
       console.error("Error fetching orders:", err);
