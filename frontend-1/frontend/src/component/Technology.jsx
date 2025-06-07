@@ -84,13 +84,23 @@ const Technology = () => {
           <h2 className="text-3xl md:text-4xl font-semibold mt-6 mb-2">Unleash electric vehicle's true power with BHAI by your side</h2>
           <p className="text-purple-700 text-base md:text-lg mb-10">Experience the future of electric vehicles, seamlessly controlled via mobile app, featuring autonomous navigation guided by mission files</p>
           <div className="relative aspect-video w-full mb-6 max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
-            <iframe
+            {/* <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/1fK_k2j4EVU?autoplay=1&mute=1&loop=1&playlist=1fK_k2j4EVU"
               title="Bullwork Technology Video"
               allow="autoplay; encrypted-media"
               allowFullScreen
+            ></iframe> */}
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/1fK_k2j4EVU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
             ></iframe>
+
           </div>
         </div>
 
