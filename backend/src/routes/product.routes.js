@@ -5,10 +5,10 @@ const { authenticate, authorizeRoles } = require('../middlewares/auth.middleware
 
 router.post('/addproduct', authenticate, authorizeRoles(['ADMIN']), productController.addProduct);
 router.get('/allproducts', productController.fetchProducts);
-router.get('/:id', productController.fetchProductById);
+// router.get('/:id', productController.fetchProductById);
 
-router.put('/:id', authenticate, authorizeRoles(['ADMIN']), productController.updateProduct);
-router.delete('/:id', authenticate, authorizeRoles(['ADMIN']), productController.deleteProduct);
+// router.put('/:id', authenticate, authorizeRoles(['ADMIN']), productController.updateProduct);
+// router.delete('/:id', authenticate, authorizeRoles(['ADMIN']), productController.deleteProduct);
 
 
 module.exports = router;
